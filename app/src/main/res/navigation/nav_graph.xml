@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    tools:ignore="UnusedNavigation"
+    app:startDestination="@id/articlesFragment">
+
+    <fragment
+        android:id="@+id/articlesFragment"
+        android:label="@string/app_name"
+        android:name="com.ny.times.ui.fragments.articles.ArticlesListFragment"
+        tools:layout="@layout/fragment_articles_list">
+        <action
+            android:id="@+id/actionOpenArticleDetails"
+            app:destination="@id/articleDetailsFragment"
+            app:popUpTo="@id/articlesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleDetailsFragment"
+        android:name="com.ny.times.ui.fragments.details.ArticleDetailsFragment"
+        tools:layout="@layout/fragment_article_detail" >
+        <argument
+            android:name="article"
+            app:argType="com.ny.times.data.ws.model.mostviewed.ResultModel" />
+    </fragment>
+
+</navigation>

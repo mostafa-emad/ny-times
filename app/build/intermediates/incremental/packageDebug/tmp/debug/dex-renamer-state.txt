@@ -1,0 +1,4 @@
+#Sun Mar 14 00:18:17 GST 2021
+base.0=/Users/msafwat/Documents/My Data/Projects/Android/ny-times-demo/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

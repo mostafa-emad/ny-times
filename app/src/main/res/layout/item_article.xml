@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_medium"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/open_details_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_forward"
+        android:layout_margin="@dimen/padding_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:lines="2"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/colorBlack"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintEnd_toStartOf="@+id/open_details_img"
+        app:layout_constraintStart_toEndOf="@+id/article_img"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="This is article title"/>
+
+    <TextView
+        android:id="@+id/byline_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/padding_small"
+        android:textColor="@color/colorDarkGray"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintEnd_toStartOf="@+id/open_details_img"
+        app:layout_constraintStart_toEndOf="@+id/article_img"
+        app:layout_constraintTop_toBottomOf="@+id/title_txt"
+        tools:text="This is article Byline"/>
+
+    <TextView
+        android:id="@+id/section_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/colorDarkGray"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintStart_toEndOf="@+id/article_img"
+        app:layout_constraintTop_toBottomOf="@+id/byline_txt"
+        tools:text="New York"/>
+
+    <TextView
+        android:id="@+id/date_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:drawablePadding="@dimen/padding_small"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/colorDarkGray"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintEnd_toStartOf="@+id/open_details_img"
+        app:layout_constraintTop_toBottomOf="@+id/byline_txt"
+        tools:text="2017-09-03"
+        app:drawableStartCompat="@drawable/ic_calendar" />
+
+    <ImageView
+        android:id="@+id/article_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:background="@drawable/circle_shape"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

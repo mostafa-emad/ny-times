@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NY Times Most Popular Articles</string>
+    <string name="title_item_detail">Item Detail</string>
+
+    <string name="no_internet_msg">No Internet Connection</string>
+    <string name="no_data_available_txt">No Data Available</string>
+
+    <string-array name="sections">
+        <item>All</item>
+        <item>Viewed</item>
+        <item>Shared</item>
+        <item>Emailed</item>
+    </string-array>
+
+    <string-array name="periods">
+        <item>1 Day</item>
+        <item>1 Week</item>
+        <item>1 Month</item>
+    </string-array>
+
+</resources>

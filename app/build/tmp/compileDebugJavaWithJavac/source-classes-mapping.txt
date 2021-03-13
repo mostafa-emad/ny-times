@@ -1,0 +1,18 @@
+com/ny/times/data/room/database/AppDatabase.java
+ com.ny.times.data.room.database.AppDatabase
+com/ny/times/BuildConfig.java
+ com.ny.times.BuildConfig
+com/ny/times/data/ws/model/request/BaseRequest.java
+ com.ny.times.data.ws.model.request.BaseRequest
+com/ny/times/data/room/Dao/ArticleDao.java
+ com.ny.times.data.room.Dao.ArticleDao
+com/ny/times/ui/adapters/BaseRecyclerAdapter.java
+ com.ny.times.ui.adapters.BaseRecyclerAdapter
+com/ny/times/data/room/converter/ArrayJsonStringConverter.java
+ com.ny.times.data.room.converter.ArrayJsonStringConverter
+ com.ny.times.data.room.converter.ArrayJsonStringConverter$1
+com/ny/times/data/room/converter/CoordinatesConverter.java
+ com.ny.times.data.room.converter.CoordinatesConverter
+ com.ny.times.data.room.converter.CoordinatesConverter$1
+com/ny/times/data/utils/AndroidPermissions.java
+ com.ny.times.data.utils.AndroidPermissions
